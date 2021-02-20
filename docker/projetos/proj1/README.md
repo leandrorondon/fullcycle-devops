@@ -26,6 +26,12 @@ O primeiro passo é a compilação da aplicação, na qual foi utilizada a image
 O passo final usa a imagem `scrach`, que uma é imagem vazia, fazendo com que a imagem final tenha somente o binário compilado, que é copiado do passo anterior para o `WORKDIR` final.
 A imagem final possui tamanho `1.39MB` quando instalada, enquanto o tamanho comprimido no DockerHub é `565.62KB`.
 
+O seguinte comando é usado para gerar a imagem:
+
+```
+docker build -t leandrorondon/fullcycle-docker-go .
+```
+
 # Instruções
 
 A imagem pode ser executada com o comando:
