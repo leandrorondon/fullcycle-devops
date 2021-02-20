@@ -12,8 +12,13 @@ Gere o docker-compose de uma forma que basta apenas rodarmos: docker-compose up 
 
 Suba tudo em um repositório e faça a entrega.
 
-# Solução
-
-
 # Instruções
+
+Executar o seguinte comando no diretório `proj2`:
+
+```
+docker-compose up
+```
+
+Acesse o servidor no endereço http://localhost:8080.
 
