@@ -1,6 +1,13 @@
 name: ci-goapp-workflow
 on:
+  pull_request:
+    branches:
+      - develop
+    paths:
+      - 'integracao-continua/goapp/**'
   push:
+    branches:
+      - develop
     paths:
       - 'integracao-continua/goapp/**'
 defaults:
