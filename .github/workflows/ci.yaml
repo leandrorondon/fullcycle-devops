@@ -13,12 +13,12 @@ on:
 defaults:
   run:
     working-directory: ./integracao-continua/goapp
-strategy:
-  matrix:
-    go: ['1.14', '1.15']
 jobs:
   check-goapp:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: ['1.14', '1.15']
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
